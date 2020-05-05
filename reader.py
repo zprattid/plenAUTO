@@ -33,17 +33,17 @@ def parseTXTfromPDF(fPath):
 	return filesArray
 
 def genHTMLheader(cuenta,direccion,fecha):
-	return "<body style = 'font-family: sans-serif'>"\
-	+"<h1>Reporte histórico de eventos</h1>"\
+	return "<body style = 'font-family: sans-serif; font-size: 60%'>"\
+	+"<div style='margin-bottom: 20px;'><h1>Reporte histórico de eventos</h1>"\
 	+"<hr>"\
-	+"<img src='logodiamond.png' width = '125px' height= '100px' style = 'float: left; margin: 50px'>"\
+	+"<img src='logodiamond.png' width = '125px' height= '100px' style = 'float: left; margin: 50px; margin-bottom: 0px; margin-top: 20px'>"\
 	+"<h2>PLENOIL (RED DE ESTACIONES DE SERVICIO)</h2>"\
 	+"<div style=''><p style ='font-weight: bold; display: inline-block'>Cuenta:</p><p style ='display: inline-block'> "\
 	+cuenta+"</p></div>"\
 	+"<div style=''><p style ='font-weight: bold; display: inline-block'>Direccion:</p><p style ='display: inline-block'> "\
 	+direccion+"</p></div>"\
 	+"<div style=''><p style ='font-weight: bold; display: inline-block'>Rango fecha del reporte:</p><p style ='display: inline-block'> "\
-	+fecha+" - "+fecha+"</p></div>\n<hr>"
+	+fecha+" - "+fecha+"</p></div>\n<hr></div>"
 
 def genHTMLfromTXT(fArray):
 	hArray = []
